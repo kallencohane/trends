@@ -1,0 +1,375 @@
+body{
+	margin:1%;
+	padding:1%;
+	font-size:120%;
+    font-family: futura;
+    font-family: "futura", sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
+
+}
+
+h1{
+	font-size: 30px; 
+    text-align: center;
+	font-weight: bold;
+    font-family: "futura", sans-serif;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer{
+
+    width:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background:#333333;
+    text-align:center;
+    color: #f7f7f7;
+    min-height: 30px;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+nav li a:visited{color: #ffffff}
+
+nav li a:active{
+    text-decoration:underline;
+}
+
+nav li a:hover {
+    text-decoration:underline;
+}
+
+nav .current {
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+nav li{
+	padding:10px;
+    text-align: center;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #403326;
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+
+
+}
+/* nav li:first-child{
+    background-color: #403326;
+}
+
+nav li:nth-child(2){
+    background-color: #403326;
+}
+
+nav li:nth-child(3){
+    background-color: #403326;
+}
+
+nav li:nth-child(4){
+    background-color: #403326;
+}
+
+nav li:nth-child(5){
+    background-color: #403326;
+} */
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+  }
+  
+  .skip a:focus {
+    top: 10px;
+  }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.chart {
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+}
+.nails {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 2;
+
+}
+
+.outfit{
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 3;
+}
+
+.puffer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    /* grid-row-end: 20; */
+}
+
+.hat {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    /* grid-row-end: 5; */
+}
+
+.leather {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+
+.monochrome {
+    grid-column-start: 4;
+    grid-column-end: -1;
+    grid-row-start: 4;
+}
+
+.interior {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+}
+
+.bag {
+    grid-column-start: 4;
+    grid-column-end:-1;
+    grid-row-start: 5;
+    padding-bottom: 50px;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.blacklong {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.blackshort {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.whiteshirt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.dress {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.model {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 50px;
+
+}
+
+.bandw {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.pastels {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.red {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.tennis {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.cream {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.green {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 50px;
+
+}
+
+.rings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.necklaces {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.clips {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.sunnies {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.claw {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.bags {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.prada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.nophone {
+    display: none;
+}
+
+.tab {
+   display: none; 
+}
+
+@media screen and (min-width: 700px){
+
+    /* .nophone {
+        display:initial;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .tab {
+        display: contents;
+    } */
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    .column {
+        float: left;
+        width: 20%;
+        padding: 10px;
+      }
+      
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      
+      .column img:hover {
+        opacity: 1;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .container {
+        position: relative;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+      
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+}
+
