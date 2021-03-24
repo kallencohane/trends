@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imgs/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Puffed Sleeves</title>
+</head>
+
+<body>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<header>
+		<nav>
+			<ul class = "nav">
+				<li><a href = "index.html">Home</a></li>
+				<li><a href = "brown.html">Brown</a></li>
+				<li><a class="current" href = "puffedsleeves.html">Puffed Sleeves</a></li>
+				<li><a href = "springknits.html">Spring Knits</a></li>
+                <li><a href = "playfulaccessories.html">Accessories</a></li>
+			</ul>
+		</nav>
+
+        <h1 id="main"> Puffed Sleeves </h1>
+    </header>
+
+    <main>
+		<p> The next big trend I've been seeing a lot of is puffed sleeves. This can elevate any look or plain shirt to maje it look a bit nicer. Whether these puffed sleeves are mesh or the same material as the shirt, they look great!</p> 
+		<p class = "nophone">Click on any image below to see it bigger and in more detail.</p>
+		<div class = "phone">
+			<img src = "imgs/puffblack.jpg" class="blacklong" alt="Woman wearing black long sleeve shirt with mesh puffy long sleeves"/>
+			<img src = "imgs/puffblack2.jpg" class="blackshort" alt="woman wearing black short sleeve shirt with black mesh short sleeves"/>
+			<img src = "imgs/whitepuff.jpg" class="whiteshirt" alt="Woman wearing white shirt with white puffy sleeves"/>
+			<img src = "imgs/dresspuff.jpg" class="dress" alt="Woman wearing black dress with black puffy sleeves"/>
+			<img src = "imgs/modelpuff.jpg" class="model" alt="Compilation of 3 runway models in outfits with puffy sleeves"/>
+
+
+		</div>
+		<div class="tab">
+		<div class="row">
+			<div class="column">
+			<img src="imgs/puffblack.jpg" alt="Woman wearing black long sleeve shirt with mesh puffy long sleeves" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+			<img src="imgs/puffblack2.jpg" alt="woman wearing black short sleeve shirt with black mesh short sleeves" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+			<img src="imgs/whitepuff.jpg" alt="Woman wearing white shirt with white puffy sleeves" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+			<img src="imgs/dresspuff.jpg" alt="Woman wearing black dress with black puffy sleeves" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="imgs/modelpuff.jpg" alt="Compilation of 3 runway models in outfits with puffy sleeves" onclick="myFunction(this);">
+			</div>
+		</div>
+		
+		<div class="container">
+
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		
+			<img id="expandedImg" style="width:100%">
+		
+			<div id="imgtext"></div>
+		</div>
+		</div>
+
+	  
+		<script type="text/javascript"> 
+			function myFunction(imgs) {
+				// Get the expanded image
+				var expandImg = document.getElementById("expandedImg");
+				// Get the image text
+				var imgText = document.getElementById("imgtext");
+				// Use the same src in the expanded image as the image being clicked on from the grid
+				expandImg.src = imgs.src;
+				// Use the value of the alt attribute of the clickable image as text inside the expanded image
+				imgText.innerHTML = imgs.alt;
+				// Show the container element (hidden with CSS)
+				expandImg.parentElement.style.display = "block";
+	}
+		</script> 
+
+    </main>
+
+
+    <footer>
+		<p>Kallen Cohane &copy; 2021</p>
+	</footer>
+</body>
+</html>
