@@ -316,7 +316,7 @@ p {
 
 @media screen and (min-width: 700px){
 
-    .nophone {
+/*     .nophone {
         display:initial;
     }
 
@@ -326,7 +326,7 @@ p {
 
     .tab {
         display: contents;
-    }
+    } */
     .nav {
         flex-direction: row;
         justify-content: space-around;
