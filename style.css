@@ -314,9 +314,60 @@ p {
    display: none; 
 }
 
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 620px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #7B7474;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1 {
+      color: black;
+  }
+
 @media screen and (min-width: 700px){
 
-    /* .nophone {
+    .nophone {
         display:initial;
     }
 
@@ -326,7 +377,7 @@ p {
 
     .tab {
         display: contents;
-    } */
+    }
     .nav {
         flex-direction: row;
         justify-content: space-around;
@@ -367,9 +418,65 @@ p {
         position: absolute;
         top: 10px;
         right: 15px;
-        color: white;
+        color: black;
         font-size: 35px;
         cursor: pointer;
       }
+
+      .chart {
+        grid-column-start: 2;
+        grid-column-end: 6;
+    
+    }
+    .nails {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    
+    }
+    .interior {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
+
+    
+    .puffer {
+        grid-column-start: 5;
+        grid-column-end: -1;
+        grid-row-start: 2;
+    }
+    
+    .leather {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+    }
+    
+    .monochrome {
+        grid-column-start: 4;
+        grid-column-end: -1;
+        grid-row-start: 3;
+    }
+
+    .hat {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+    }
+    
+    .outfit{
+        grid-column-start: 1;
+        grid-column-end:3;
+        grid-row-start: 4;
+    }
+    
+    .bag {
+        grid-column-start: 5;
+        grid-column-end:-1;
+        grid-row-start: 4;
+        padding-bottom: 50px;
+    
+    }
 }
 
