@@ -7,11 +7,21 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Trends</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2S244D5W1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-M2S244D5W1');
+	</script>
 </head>
 
 <body>
 	<div class="skip"><a href="#s">Skip to Main Content</a></div>
 	<header>
+		<h1 id="logo">TRENDS</h1>
 		<nav>
 			<ul class = "nav">
 				<li><a class="current" href = "index.html">Home</a></li>
@@ -22,7 +32,7 @@
 			</ul>
 		</nav>
 
-        <h1 id="s"> 2021 Fashion Trends </h1>
+        <h2 id="s"> 2021 Fashion Trends </h2>
     </header>
 
     <main>
@@ -31,17 +41,41 @@
 		
 
 		<!-- <img src = "imgs/me.JPG" class="center" alt="Picture of author in bucket hat and black and white gingham oversized collared jacket"/> -->
-		<div class="flip-card">
+		<div class="flip-card" tabindex="0">
 			<div class="flip-card-inner">
 			  <div class="flip-card-front">
 				<img src="imgs/me.JPG" alt="Picture of author in bucket hat and black and white gingham oversized collared jacket">
 			  </div>
 			  <div class="flip-card-back">
-				<h1>Kallen Cohane</h1>
+				<h3>Kallen Cohane</h3>
 				<p>I am the author of this website</p>
 				<p>This is a picture of me sitting in a restaurant in London in January 2020</p>
 			  </div>
 			</div>
+		  </div>
+
+		  <div class="contain">
+			<form action="https://formspree.io/f/mayawznb" method="POST">
+		  
+			  <label for="fname">First Name</label>
+			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		  
+			  <label for="lname">Last Name</label>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		  
+			  <!-- <label for="country">Country</label>
+			  <select id="country" name="country">
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="usa">USA</option>
+			  </select> -->
+		  
+			  <label for="trend">Trend</label>
+			  <textarea id="trend" name="trend" placeholder="Tell me about an upcoming trend..." style="height:200px"></textarea>
+		  
+			  <input type="submit" value="Submit">
+		  
+			</form>
 		  </div>
     </main>
 

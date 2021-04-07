@@ -7,12 +7,24 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Spring Knits</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2S244D5W1"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M2S244D5W1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-M2S244D5W1');
+</script>
+	</script>
 </head>
 
 <body>
 	<header>
 		<div class="skip"><a href="#main">Skip to Main Content</a></div>
 		<nav>
+			<h1>TRENDS</h1>
 			<ul class = "nav">
 				<li><a href = "index.html">Home</a></li>
 				<li><a href = "brown.html">Brown</a></li>
@@ -22,12 +34,12 @@
 			</ul>
 		</nav>
 
-        <h1 id="main"> Spring Knits </h1>
+        <h2 id="main"> Spring Knits </h2>
     </header>
 
     <main>
 		<p> Spring and knits are not words I usually associate with each other. I used to think of knits as solely winter sweaters, but this year, we are seeing a big comeback in the classic sweater vest. While this did not used to be my go to outfit, these days I am loving it. The sweater vests look great on their own or on top of a long sleeve or short sleeve. Light cardigans also fit in this category of spring knits when in need of a jacket on a cool spring day. </p>
-		<p class = "nophone">Click on any image below to see it bigger and in more detail.</p>
+		<p class = "nophone">Hover or tab on any image below to see it bigger and in more detail.</p>
 		<div class = "phone">
 			<img src = "imgs/bandw.jpg" class="bandw" alt="Woman wearing black sweater vest with white detailing"/>
 			<img src = "imgs/pastels.jpg" class="pastels" alt="woman wearing pastel colored cardigan"/>
@@ -41,19 +53,19 @@
 		<div class="tab">
 		<div class="row">
 			<div class="column">
-			<img src="imgs/bandw.jpg" alt="Woman wearing black sweater vest with white detailing" onmouseover="myFunction(this);" onfocus="myFunction(this);">
+			<img src="imgs/bandw.jpg" tabindex="0" alt="Woman wearing black sweater vest with white detailing" onmouseover="myFunction(this);" onfocus="myFunction(this);">
 			</div>
 			<div class="column">
-			<img src="imgs/pastels.jpg" alt="woman wearing pastel colored cardigan" onmouseover="myFunction(this);" onfocus="myFunction(this);">
+			<img src="imgs/pastels.jpg" tabindex="0" alt="woman wearing pastel colored cardigan" onmouseover="myFunction(this);" onfocus="myFunction(this);">
 			</div>
 			<div class="column">
-			<img src="imgs/red.jpg" alt="woman wearing red sweater vest with buttons" onmouseover="myFunction(this);" onfocus="myFunction(this);">
+			<img src="imgs/red.jpg" tabindex="0" alt="woman wearing red sweater vest with buttons" onmouseover="myFunction(this);" onfocus="myFunction(this);">
 			</div>
 			<div class="column">
-			<img src="imgs/cream.jpg" alt="Woman wearing black and cream oversized sweater vest" onmouseover="myFunction(this);" onfocus="myFunction(this);">
+			<img src="imgs/cream.jpg" tabindex="0" alt="Woman wearing black and cream oversized sweater vest" onmouseover="myFunction(this);" onfocus="myFunction(this);">
 			</div>
 			<div class="column">
-				<img src="imgs/green.jpg" alt="Woman wearing green sweater vest" onmouseover="myFunction(this);" onfocus="myFunction(this);">
+				<img src="imgs/green.jpg" tabindex="0" alt="Woman wearing green sweater vest" onmouseover="myFunction(this);" onfocus="myFunction(this);">
 			</div>
 		</div>
 		
@@ -67,19 +79,11 @@
 		</div>
 		</div>
 
-		<script type="text/javascript"> 
-			function myFunction(imgs) {
-				var expandImg = document.getElementById("expandedImg");
-				var imgText = document.getElementById("imgtext");
-				expandImg.src = imgs.src;
-				imgText.innerHTML = imgs.alt;
-				expandImg.parentElement.style.display = "block";
-	}
-		</script> 
     </main>
 
     <footer>
 		<p>Kallen Cohane &copy; 2021</p>
 	</footer>
+	<script src="js/picturescript.js"></script>
 </body>
 </html>
