@@ -303,6 +303,10 @@ nav li{
    display: none; 
 }
 
+.tabps {
+    display: none;
+}
+
 .flip-card {
     background-color: transparent;
     width: 500px;
@@ -440,14 +444,28 @@ nav li{
     .tab {
         display: contents;
     }
+
+    .tabps {
+        display: contents;
+    }
+
+    .computer {
+        display: none;
+    }
+
     .nav {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:start;
         border-radius: 0px 0px 0px 0px;
 
     }
 
     .column {
+        float: left;
+        width: 20%;
+        padding: 10px;
+      }
+      .columnps {
         float: left;
         width: 20%;
         padding: 10px;
@@ -459,6 +477,15 @@ nav li{
       }
       
       .column img:hover {
+        opacity: 1;
+      }
+
+      .columnps img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      
+      .columnps img:hover {
         opacity: 1;
       }
       
@@ -556,6 +583,113 @@ nav li{
         background-size: cover;
       }
 
+    #opac {
+        opacity: 0.5;
+    }
+
+    #opac:hover, #opac:focus{
+        opacity: 1;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1200px){
+    h1 {
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .nails {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        padding-bottom: 50px;
+    
+    }
+    .interior {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        padding-bottom: 50px;
+    }
+
+    
+    .puffer {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        padding-bottom: 50px;
+    }
+    
+    .leather {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    
+    .monochrome {
+
+        grid-column-start: 6;
+        grid-column-end:-1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding-bottom: 50px;
+    }
+
+    .hat {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
+    
+    .outfit{
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+    }
+    
+    .bag {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+    
+    }
+
+    .computer {
+        display: contents;
+    }
+    .column {
+        float: left;
+        width: 16.6667%;
+        padding: 10px;
+      }
+
+    .tab {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
 
 
 
