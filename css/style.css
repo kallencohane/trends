@@ -60,9 +60,8 @@ nav li a:hover {
 }
 
 nav .current {
-    /* text-decoration: underline; */
     font-weight: bold;
-    
+    text-transform: uppercase;
 }
 
 nav li{
@@ -123,14 +122,12 @@ nav li{
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
-    /* grid-row-end: 20; */
 }
 
 .hat {
     grid-column-start: 4;
     grid-column-end: -1;
     grid-row-start: 3;
-    /* grid-row-end: 5; */
 }
 
 .leather {
@@ -318,7 +315,6 @@ nav li{
     margin-right: auto;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -328,14 +324,11 @@ nav li{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
   }
 
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+    .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -343,13 +336,11 @@ nav li{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back {
     background-color: #7B7474;
     color: white;
@@ -362,17 +353,16 @@ nav li{
 
 
   input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
   }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #403326de;
     color: white;
@@ -382,12 +372,10 @@ nav li{
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #403326;
   }
   
-  /* Add a background color and some padding around the form */
   .contain {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -405,7 +393,6 @@ nav li{
     animation-iteration-count: infinite;
  }
  
- /*Keyframes for animation*/
  @-webkit-keyframes logo_grow{
     0% {
         text-shadow: 2px 2px rgba(64,51,38,0);
@@ -420,7 +407,6 @@ nav li{
  }
  
  @keyframes logo_grow{
-   /* Your code here. */
    0% {
     text-shadow: 4px 4px rgba(64,51,38,0);
   }
