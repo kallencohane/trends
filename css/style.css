@@ -305,6 +305,10 @@ nav li{
     display: none;
 }
 
+.computer {
+    display: none;
+}
+
 .flip-card {
     background-color: transparent;
     width: 500px;
